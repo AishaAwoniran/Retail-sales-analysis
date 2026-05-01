@@ -145,11 +145,11 @@ SELECT
         WHEN SUM(revenue) BETWEEN 2000 AND 5000 THEN 'Medium Value'
         ELSE 'Low Value'
     END AS customer_segment
+FROM [retail dataset]
+GROUP BY customer_id;
 ```
 ## Power BI Dashboard
 <img width="957" height="537" alt="Retail  Sales Dashboard" src="https://github.com/user-attachments/assets/cfdb5df4-10e4-4a71-9d1b-d9728ab708e4" />
 
 ## Live Dashboard
 [view retail sales dashboard in Power BI](https://app.powerbi.com/links/9ZVyvMAU7M?ctid=a36e1a13-c829-4154-8635-f2516711db50&pbi_source=linkShare)
-FROM [retail dataset]
-GROUP BY customer_id;
